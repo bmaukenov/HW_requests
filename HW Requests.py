@@ -2,8 +2,8 @@ import requests
 
 
 def translate(initial_file_path, final_file_path, to_lang):
-    IAM_TOKEN = 't1.9euelZqLkJ2NzcePlcmOzY2YyMiOme3rnpWazZDNio6dzMaVz5bKl8-SkY_l8_dtRycA-u8fcwh6_d3z9y12JAD67x9zCHr9.qTg4sFumULAbPgb58klXqTWpSDrDqY1FzOWq-tuy8CBnQLLzVh77BavOYskL9p6cnbPsVsesdTfttwpvTgl9Aw'
-    FOLDER_ID = 'b1gitleg3ur0o1bmovtm'
+    IAM_TOKEN = ''
+    FOLDER_ID = ''
     url = 'https://translate.api.cloud.yandex.net/translate/v2/translate'
     with open(initial_file_path) as file:
         texts = file.read()

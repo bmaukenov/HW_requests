@@ -15,7 +15,8 @@ def translate(initial_file_path, final_file_path, from_lang, to_lang="ru"):
     data = {
         'folder_id': FOLDER_ID,
         'texts': texts,
-        'targetLanguageCode': to_lang
+        'targetLanguageCode': to_lang,
+        'sourceLanguageCode': from_lang
     }
     response = requests.post(url, headers=headers, json=data)
     data = response.json()
